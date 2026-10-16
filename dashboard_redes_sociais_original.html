@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Redes Sociais | Canais de Comunicação | Serviços Digitais</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#0a1122;--sd:#0d1730;--pn:#111b34;--bd:#1f2d4d;--tx:#eaf0ff;--mut:#8d9bbb;--ac:#2f6bff;--up:#4ade80;--dn:#fb7185;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef2fa;--sd:#fff;--pn:#fff;--bd:#dbe3f2;--tx:#14213d;--mut:#62708f;--up:#15803d;--dn:#be123c}}
+:root[data-theme="light"]{--bg:#eef2fa;--sd:#fff;--pn:#fff;--bd:#dbe3f2;--tx:#14213d;--mut:#62708f;--up:#15803d;--dn:#be123c}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.4 'Plus Jakarta Sans',system-ui,sans-serif}
+.app{display:grid;grid-template-columns:210px 1fr;min-height:100vh}
+.side{background:var(--sd);border-right:1px solid var(--bd);padding:18px 12px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:100vh;overflow-y:auto}
+.side button{display:flex;gap:10px;align-items:center;width:100%;text-align:left;background:none;border:0;color:var(--tx);padding:9px 12px;border-radius:9px;font:inherit;cursor:pointer}
+.side button:hover{background:rgba(120,140,200,.12)}.side button.on{background:var(--ac);color:#fff;font-weight:600}
+.side i{width:10px;height:10px;border-radius:3px;flex:none}.side hr{border:0;border-top:1px solid var(--bd);margin:10px 0;width:100%}
+main{padding:20px 22px;min-width:0}
+.top{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:16px}
+.top h1{margin:0;font-size:22px;line-height:1.25;display:flex;gap:10px;align-items:center}.top p{margin:0;color:var(--mut)}
+select,input{font:inherit;color:var(--tx);background:var(--pn);border:1px solid var(--bd);border-radius:9px;padding:8px 11px}
+button.b{font:inherit;font-weight:600;border-radius:9px;border:1px solid var(--bd);background:var(--pn);color:var(--tx);padding:8px 14px;cursor:pointer}button.p{background:var(--ac);border-color:var(--ac);color:#fff}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.sec{display:none}.sec.on{display:block}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:14px}
+.pn{background:var(--pn);border:1px solid var(--bd);border-radius:14px;padding:16px;break-inside:avoid}
+.pn h2{margin:0 0 10px;font-size:16px}
+.kc{display:grid;gap:2px}.kh{display:flex;gap:10px;align-items:center}
+.ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:700;font-size:14px;flex:none}
+.ic{box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}.ic svg{display:block}.side .ic{border-radius:7px}.tb{margin-bottom:12px;padding:6px 16px}.sc{overflow-x:auto}.tb table{width:100%;border-collapse:collapse}.tb th,.tb td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--bd);white-space:nowrap}.tb th:first-child,.tb td:first-child{text-align:left;white-space:normal}.tb th{color:var(--mut);font-weight:600}.tb tbody tr:last-child td{border-bottom:0}.tb td.mx{color:#6f9bff;font-weight:700}.tb th:first-child,.tb td:first-child{position:sticky;left:0;background:var(--pn);min-width:150px}.kc b{font-size:24px;line-height:1.1}.kc small{color:var(--mut);font-size:12px}
+.d{font-weight:600;font-size:13px}.up{color:var(--up)}.dn{color:var(--dn)}.mu{color:var(--mut)}
+.r2{display:grid;grid-template-columns:1.6fr 1fr;gap:12px;margin-bottom:12px}
+.lg{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 6px;color:var(--mut);font-size:13px}.lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+.dn2{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.dl{flex:1;min-width:190px;display:grid;gap:7px}
+.dl div{display:flex;gap:8px;align-items:center;font-size:13px}.dl span:nth-child(2){flex:1}.dl b{min-width:48px;text-align:right}.dl em{font-style:normal;color:var(--mut);min-width:44px;text-align:right}
+.dl i{width:10px;height:10px;border-radius:3px}
+.ds div{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--bd);font-size:13px}.ds div:last-child{border:0}
+.ds i{width:10px;height:10px;border-radius:50%;flex:none}.ds span{flex:1}.ds b{font-size:14px}
+.bg{background:rgba(47,107,255,.18);color:#7da2ff;border-radius:6px;padding:3px 9px;font-size:12px;font-weight:600}
+.chg{display:flex;gap:10px;align-items:center;margin:0 0 14px}.chg h2{margin:0;font-size:19px}
+.mg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:12px;margin-bottom:22px}
+.mg b.big{font-size:26px}.mt{color:var(--mut);font-size:13px;margin-bottom:4px}
+.f{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px 12px;margin:12px 0}
+.f label{display:block;font-size:12px;color:var(--mut)}.f input{width:100%}.f h3{grid-column:1/-1;margin:8px 0 0;font-size:13px}
+.msg{color:var(--up);font-weight:600;margin-left:8px}.note{color:var(--mut);font-size:12px}
+#lg{position:fixed;inset:0;display:none;place-items:center;background:var(--bg);z-index:50;padding:16px}body:not(.in) #lg{display:grid}body:not(.in) .app{display:none}.lgb{width:min(100%,380px)}.lgb h2{margin:8px 0 2px}.lgb label{display:block;font-size:12px;color:var(--mut);margin:12px 0 4px}.lgb input{width:100%}.lgb p{margin:4px 0}#ut{width:100%;border-collapse:collapse}#ut th,#ut td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap;vertical-align:middle}#ut th{color:var(--mut);font-weight:600}.ck{display:flex;flex-wrap:wrap;gap:6px 16px;margin:6px 0 14px}.ck label{display:flex;gap:6px;align-items:center;font-size:13px}.ck input{width:auto}.sh{font-size:15px;margin:18px 0 8px;color:var(--mut);font-weight:600}.r3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:12px;margin-bottom:12px}[hidden]{display:none!important}.lk{background:none;border:0;color:#6f9bff;cursor:pointer;font:inherit;text-decoration:underline;padding:0}.rcb{border:1px dashed var(--ac);border-radius:10px;padding:12px;margin:12px 0;line-height:1.8}.rcb code{font-size:18px;font-weight:700;letter-spacing:2px;user-select:all}
+@media (max-width:900px){.app{grid-template-columns:1fr}.side{flex-direction:row;height:auto;position:static;overflow-x:auto;border-right:0;border-bottom:1px solid var(--bd)}.side button{width:auto;white-space:nowrap}.side hr{display:none}.r2{grid-template-columns:1fr}main{padding:14px}}
+@media print{
+@page{size:A4 landscape;margin:9mm}
+:root{--bg:#fff;--sd:#fff;--pn:#fff;--bd:#dbe3f2;--tx:#14213d;--mut:#62708f;--up:#15803d;--dn:#be123c;padding:0}
+body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:12px}
+.side,.noprint{display:none!important}.app{display:block}main{padding:0}
+.sec{display:block!important}#in,#us,#ac{display:none!important}.cs{break-before:page}
+.kp{grid-template-columns:repeat(5,1fr)}.tb th,.tb td{padding:6px 4px;font-size:11px}.r2{grid-template-columns:1.6fr 1fr}.mg{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+<div id="lg" role="dialog" aria-modal="true" aria-labelledby="lgt"><form id="lgf" class="lgb pn">
+<div style="display:flex;gap:10px;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="14" width="5" height="11" rx="2" fill="#2f6bff"/><rect x="11" y="8" width="5" height="17" rx="2" fill="#2f6bff"/><rect x="19" y="2" width="5" height="23" rx="2" fill="#2f6bff"/></svg><b style="font-size:18px;line-height:1.3">Redes Sociais | Canais de Comunicação | Serviços Digitais</b></div>
+<h2 id="lgt"></h2><p id="lgs" class="mu"></p>
+<label for="lgu">Utilizador</label><input id="lgu" autocomplete="username">
+<label for="lgp">Password</label><input id="lgp" type="password" autocomplete="current-password">
+<p id="lge" class="dn" role="alert"></p><button class="b p" id="lgb" type="submit" style="width:100%;margin-top:8px"></button>
+<p style="text-align:center;margin-top:10px" id="lgrw"><button type="button" id="lgr" class="lk">Esqueci-me da password</button></p>
+</form>
+<form id="rsf" class="lgb pn" hidden><b style="font-size:18px">Repor password</b>
+<p class="mu">Escreve o utilizador, o código de recuperação e a nova password.</p>
+<label for="rsu">Utilizador</label><input id="rsu" autocomplete="username">
+<label for="rsc">Código de recuperação</label><input id="rsc" autocomplete="off" placeholder="XXXX-XXXX-XXXX-XXXX">
+<label for="rsp">Nova password (mín. 6 caracteres)</label><input id="rsp" type="password" autocomplete="new-password">
+<p id="rse" class="dn" role="alert"></p>
+<button class="b p" type="submit" style="width:100%;margin-top:8px">Repor password</button>
+<p style="text-align:center;margin-top:10px"><button type="button" id="rsb" class="lk">Voltar ao login</button></p>
+<p class="note">Sem código? Pede a um administrador para repor a tua password no menu Utilizadores.</p></form></div>
+<div class="app">
+<nav class="side" id="nav" aria-label="Canais"></nav>
+<main>
+<div class="top">
+<div><h1><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="3" y="14" width="5" height="11" rx="2" fill="#2f6bff"/><rect x="11" y="8" width="5" height="17" rx="2" fill="#2f6bff"/><rect x="19" y="2" width="5" height="23" rx="2" fill="#2f6bff"/></svg>Redes Sociais | Canais de Comunicação | Serviços Digitais</h1><p id="sub"></p></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap" class="noprint"><span id="psel" style="display:contents"><select id="yr" aria-label="Ano"></select><select id="qt" aria-label="Período"><option value="a">Ano completo</option><option value="0">T1 · Jan–Mar</option><option value="1">T2 · Abr–Jun</option><option value="2">T3 · Jul–Set</option><option value="3">T4 · Out–Dez</option></select></span><button class="b p" id="pdf">Exportar PDF</button></div>
+</div>
+<div id="views"></div>
+<section class="sec" id="in">
+<div class="pn"><h2>Inserir ou corrigir dados do mês</h2>
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><input type="month" id="mo" aria-label="Mês"><button class="b p" id="sv">Guardar mês</button><button class="b" id="del">Apagar mês</button><span class="msg" id="msg"></span></div>
+<div class="f" id="form"></div>
+<p class="note">Campos vazios ficam sem valor. Os dados ficam guardados neste navegador e dispositivo. O PDF inclui a visão geral e todos os canais do trimestre escolhido.</p></div>
+</section>
+<section class="sec" id="us" data-v="us"><div class="pn"><h2>Utilizadores e acessos</h2><div class="sc"><table id="ut"></table></div>
+<h2 style="margin-top:20px">Novo utilizador</h2>
+<div class="f"><div><label for="nu">Utilizador</label><input id="nu" autocomplete="off"></div><div><label for="np">Password (mín. 6 caracteres)</label><input id="np" type="password" autocomplete="new-password"></div><div><label for="nr">Perfil</label><select id="nr"><option value="user">Utilizador</option><option value="admin">Administrador (acesso total)</option></select></div></div>
+<p class="note">Menus a que o utilizador tem acesso:</p><div class="ck" id="nm"></div>
+<button class="b p" id="nc">Criar utilizador</button><span class="msg" id="um"></span><div id="rcu"></div>
+<p class="note">Administradores veem tudo e podem inserir dados e gerir utilizadores. Utilizadores só veem os menus atribuídos.</p></div></section>
+<section class="sec" id="ac" data-v="ac"><div class="pn" style="max-width:520px"><h2>A minha conta</h2>
+<div class="f"><div><label for="op">Password atual</label><input id="op" type="password" autocomplete="current-password"></div><div><label for="np2">Nova password (mín. 6 caracteres)</label><input id="np2" type="password" autocomplete="new-password"></div></div>
+<button class="b p" id="cp">Alterar password</button><span class="msg" id="am"></span>
+<h2 style="margin-top:22px">Código de recuperação</h2><p class="note">Serve para repor a password se te esqueceres dela (ecrã de login, Esqueci-me da password). Gerar um novo invalida o anterior; escreve a password atual acima.</p>
+<button class="b" id="gc">Gerar novo código</button><div id="rcb"></div></div></section>
+</main>
+</div>
+<script>
+var MS=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+var CH=[
+{n:'Facebook',c:'#2f7bff',m:[['fb_seg','Seguidores'],['fb_vis','Visualizações'],['fb_int','Interações com conteúdo']]},
+{n:'Instagram',c:'#ff3d8b',m:[['ig_seg','Seguidores'],['ig_vis','Visualizações'],['ig_int','Interações com conteúdo']]},
+{n:'YouTube',c:'#ff3030',m:[['yt_seg','Seguidores'],['yt_vis','Visualizações'],['yt_h','Tempo de visualização (horas)']]},
+{n:'Threads e X',c:'#a855f7',m:[['th_seg','Threads · Seguidores'],['x_seg','X · Seguidores']]},
+{n:'Telegram e WhatsApp',c:'#38bdf8',m:[['tg_seg','Telegram · Seguidores'],['wa_seg','WhatsApp · Seguidores']]},
+{n:'Podcast (Spotify)',c:'#22c55e',m:[['sp_seg','Seguidores']]},
+{n:'PACWEB',c:'#d16ad6',m:[['pa_ua','Utilizadores ativos'],['pa_un','Utilizadores novos'],['pa_ev','Quantidade de eventos']]},
+{n:'PressReader',c:'#2dd4a0',m:[['pr_art','Consulta de artigos'],['pr_ses','Sessões'],['pr_ed','Edições únicas lidas']]},
+{n:'Perfil Google',c:'#f59e0b',m:[['g_bib','Biblioteca Municipal Afonso Lopes Vieira'],['g_lud','Ludoteca Municipal de Leiria'],['g_tro','Trokakiosque'],['g_pra','Biblioteca de Praia do Pedrógão']]}];
+var B=[['Instagram','#ff3d8b','ig_seg','ig'],['Facebook','#2f7bff','fb_seg','fb'],['YouTube','#ff3030','yt_seg','yt'],['Threads','#a855f7','th_seg','th'],['X (Twitter)','#22d3ee','x_seg','x'],['Telegram','#38bdf8','tg_seg','tg'],['WhatsApp','#34d399','wa_seg','wa'],['Spotify','#22c55e','sp_seg','sp']];
+var IC=[['fb'],['ig'],['yt'],['th','x'],['tg','wa'],['sp'],['pa'],['pr'],['g']];
+var ICB={fb:'#1877f2',ig:'linear-gradient(45deg,#f9a03f,#e1306c 55%,#833ab4)',yt:'#ff0000',th:'#1c1c1c',x:'#1c1c1c',tg:'#229ed9',wa:'#25d366',sp:'#1db954',pa:'#d16ad6',pr:'#2dd4a0',g:'#f59e0b'};
+var ICS={
+fb:'<path fill="#fff" stroke="none" d="M13.5 21v-8h2.7l.5-3.3h-3.2V7.6c0-1 .4-1.6 1.7-1.6h1.6V3.2C16.5 3.1 15.6 3 14.6 3 12.2 3 10.2 4.4 10.2 7.2v2.5H7.5V13h2.7v8z"/>',
+ig:'<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".9" fill="#fff" stroke="none"/>',
+yt:'<rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="#fff" stroke="none"/><path d="M10 9.5v5l4.5-2.5z" fill="#ff0000" stroke="none"/>',
+th:'<path d="M16.5 8.5C15.8 6.2 14 5 12 5c-3 0-5 2.5-5 7s2 7 5 7c2.5 0 4.5-1.4 4.5-3.7 0-2.2-1.9-3.3-4.2-3.2-1.6.1-2.6 1-2.6 2.1 0 1 .9 1.8 2.2 1.7 2.3-.1 3.2-2 3.1-4.4"/>',
+x:'<path d="M5 4.5l14 15M19 4.5l-14 15" stroke-width="2.4"/>',
+tg:'<path fill="#fff" stroke="none" fill-rule="evenodd" d="M21 4.2L2.8 11.2c-.7.3-.7 1.2 0 1.4l4.6 1.5 1.8 5.5c.2.6 1 .8 1.4.3l2.5-2.6 4.6 3.4c.5.4 1.2.1 1.4-.5L22.4 5.4c.2-.8-.6-1.5-1.4-1.2zM9 13.6l8.5-5.3-6.7 6.4z"/>',
+wa:'<path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z"/><path d="M9.2 8.6c-.3.9.1 2.2 1.4 3.6s2.7 1.9 3.6 1.6l.8-1-1.8-1-.7.6c-.8-.3-1.5-1-1.8-1.8l.6-.7-.9-1.8z" fill="#fff" stroke="none"/>',
+sp:'<path d="M6 9.2c4-1.2 8.2-.8 12 1.3M6.8 12.7c3.4-.9 6.8-.5 9.8 1.2M7.6 16c2.7-.7 5.2-.4 7.6.9" stroke-width="2.2"/>',
+pa:'<path d="M4 5.5h5.5A2.5 2.5 0 0 1 12 8v11a2.5 2.5 0 0 0-2.5-2.5H4zM20 5.5h-5.5A2.5 2.5 0 0 0 12 8v11a2.5 2.5 0 0 1 2.5-2.5H20z"/>',
+pr:'<rect x="4.5" y="4" width="15" height="16" rx="2"/><path d="M8 8.5h8M8 12h8M8 15.5h5"/>',
+g:'<path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 0 0-13 0C5.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.3" fill="#fff" stroke="none"/>'};
+function ic(k,s){return '<span class="ic" style="width:'+s+'px;height:'+s+'px;background:'+ICB[k]+'"><svg viewBox="0 0 24 24" width="'+Math.round(s*.62)+'" height="'+Math.round(s*.62)+'" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICS[k]+'</svg></span>'}
+var SEED={
+'2025-01':{fb_seg:10150,ig_seg:3200,yt_seg:325,th_seg:410,x_seg:19,tg_seg:98,wa_seg:29,fb_vis:139263,fb_int:3422,yt_vis:300,yt_h:2.7,pr_art:52553,pr_ses:1324,pr_ed:2447,sp_seg:15},
+'2025-02':{fb_seg:10286,ig_seg:3268,yt_seg:331,th_seg:439,x_seg:22,tg_seg:106,wa_seg:30,fb_vis:120950,fb_int:6305,yt_vis:257,yt_h:3.1,pr_art:70175,pr_ses:1896,pr_ed:3642,sp_seg:15},
+'2025-03':{fb_seg:10319,ig_seg:3411,yt_seg:331,th_seg:446,x_seg:20,tg_seg:107,wa_seg:31,fb_vis:90570,fb_int:4365,yt_vis:274,yt_h:2.4,pr_art:69342,pr_ses:1840,pr_ed:3662,sp_seg:16},
+'2025-04':{fb_seg:10359,ig_seg:3471,yt_seg:333,th_seg:456,x_seg:22,tg_seg:106,wa_seg:32,fb_vis:109348,fb_int:5183,yt_vis:832,yt_h:3.5,pr_art:74193,pr_ses:1601,pr_ed:3456,sp_seg:17},
+'2025-05':{fb_seg:10412,ig_seg:3566,yt_seg:333,th_seg:466,x_seg:22,tg_seg:110,wa_seg:33,fb_vis:110498,fb_int:8657,yt_vis:443,yt_h:2.1,pr_art:83339,pr_ses:1137,pr_ed:2228,sp_seg:17},
+'2025-06':{fb_seg:10437,ig_seg:3640,yt_seg:335,th_seg:480,x_seg:24,tg_seg:111,wa_seg:33,fb_vis:54707,fb_int:2282,yt_vis:835,yt_h:2.6,pr_art:88200,pr_ses:1575,pr_ed:3370,sp_seg:18},
+'2025-07':{fb_seg:10508,ig_seg:3725,yt_seg:340,th_seg:490,x_seg:24,tg_seg:112,wa_seg:34,fb_vis:247515,fb_int:8816,yt_vis:416,yt_h:2.5,pr_art:104329,pr_ses:1801,pr_ed:4178,sp_seg:18},
+'2025-08':{fb_seg:10547,ig_seg:3740,yt_seg:340,th_seg:510,x_seg:24,tg_seg:113,wa_seg:35,fb_vis:224012,fb_int:7783,ig_vis:25907,ig_int:380,yt_vis:796,yt_h:3.8,pr_art:119390,pr_ses:2198,pr_ed:4515,sp_seg:18},
+'2025-09':{fb_seg:10582,ig_seg:3842,yt_seg:340,th_seg:520,x_seg:24,tg_seg:114,wa_seg:36,fb_vis:100013,fb_int:4805,ig_vis:87439,ig_int:1700,yt_vis:991,yt_h:5.9,pr_art:104055,pr_ses:1894,pr_ed:3984,sp_seg:19},
+'2025-10':{fb_seg:10620,ig_seg:4014,yt_seg:339,th_seg:530,x_seg:25,tg_seg:114,wa_seg:36,fb_vis:143683,fb_int:5720,ig_vis:107569,ig_int:2400,yt_vis:927,yt_h:3.8,pr_art:100151,pr_ses:1720,pr_ed:3689,sp_seg:19},
+'2025-11':{fb_seg:10701,ig_seg:4078,yt_seg:345,th_seg:552,x_seg:26,tg_seg:115,wa_seg:37,fb_vis:112509,fb_int:5394,ig_vis:74873,ig_int:1600,yt_vis:650,yt_h:2.5,pr_art:66141,pr_ses:928,pr_ed:1852,sp_seg:20},
+'2025-12':{fb_seg:10745,ig_seg:4097,yt_seg:345,th_seg:555,x_seg:27,tg_seg:116,wa_seg:37,fb_vis:70896,fb_int:2506,ig_vis:45854,ig_int:1000,yt_vis:2800,yt_h:4.1,pr_art:34389,pr_ses:694,pr_ed:1533,sp_seg:20},
+'2026-01':{fb_seg:10745,fb_vis:85300,fb_int:1600,ig_seg:4097,ig_vis:58200,ig_int:1200,tg_seg:116,wa_seg:37,sp_seg:20,pa_ua:2500,pa_un:2500,pa_ev:28000,pr_art:40521,pr_ses:997,pr_ed:1946,g_bib:685,g_lud:77,g_tro:57,g_pra:49},
+'2026-02':{fb_seg:10832,fb_vis:114700,fb_int:1400,ig_seg:4244,ig_vis:129500,ig_int:2200,tg_seg:111,wa_seg:46,sp_seg:21,pa_ua:3600,pa_un:3300,pa_ev:34000,pr_art:61899,pr_ses:1294,pr_ed:2490,g_bib:619,g_lud:72,g_tro:22,g_pra:31},
+'2026-03':{fb_seg:10851,fb_vis:89200,fb_int:1500,ig_seg:4295,ig_vis:59000,ig_int:1900,tg_seg:111,wa_seg:45,sp_seg:22,pa_ua:4200,pa_un:3800,pa_ev:56000,pr_art:68910,pr_ses:1588,pr_ed:3172,g_bib:669,g_lud:63,g_tro:42,g_pra:36},
+'2026-04':{fb_seg:10901,fb_vis:94100,fb_int:2100,ig_seg:4351,ig_vis:59600,ig_int:2000,yt_seg:333,yt_vis:1000,yt_h:3,th_seg:333,x_seg:22,tg_seg:113,wa_seg:45,sp_seg:20,pa_ua:3600,pa_un:3100,pa_ev:53000,pr_art:83062,pr_ses:1467,pr_ed:2925,g_bib:630,g_lud:61,g_tro:56,g_pra:43},
+'2026-05':{fb_seg:10933,fb_vis:109600,fb_int:2200,ig_seg:4425,ig_vis:62900,ig_int:2600,yt_seg:333,yt_vis:1502,yt_h:4.8,th_seg:333,x_seg:22,tg_seg:110,wa_seg:45,sp_seg:34,pa_ua:3700,pa_un:3200,pa_ev:56000,pr_art:96606,pr_ses:1787,pr_ed:3184,g_bib:624,g_lud:66,g_tro:30,g_pra:31},
+'2026-06':{fb_seg:10963,fb_vis:69900,fb_int:1100,ig_seg:4519,ig_vis:75700,ig_int:2300,yt_seg:335,yt_vis:1033,yt_h:3.1,th_seg:335,x_seg:24,tg_seg:105,wa_seg:46,sp_seg:35,pa_ua:4000,pa_un:3400,pa_ev:52000,pr_art:80535,pr_ses:1434,pr_ed:2572,g_bib:712,g_lud:56,g_tro:27,g_pra:47},
+'2026-07':{fb_seg:10985,fb_vis:115200,fb_int:1800,ig_seg:4549,ig_vis:66800,ig_int:2000,yt_seg:364,yt_vis:1900,yt_h:3.9,th_seg:612,x_seg:25,tg_seg:105,wa_seg:46,sp_seg:35,pa_ua:1800,pa_un:1500,pa_ev:35000,pr_art:99076,pr_ses:1906,pr_ed:3337,g_bib:479,g_lud:79,g_tro:52,g_pra:94},
+'2026-08':{fb_seg:11000,fb_vis:143700,fb_int:1700,ig_seg:4606,ig_vis:64200,ig_int:1800,yt_seg:367,yt_vis:4900,yt_h:7.5,th_seg:615,x_seg:25,tg_seg:103,wa_seg:46,sp_seg:36,pa_ua:1200,pa_un:973,pa_ev:26000,pr_art:107826,pr_ses:2285,pr_ed:3991,g_bib:507,g_lud:57,g_tro:80,g_pra:87},
+'2026-09':{fb_seg:11033,fb_vis:74819,fb_int:1100,ig_seg:4659,ig_vis:58400,ig_int:2000,yt_seg:369,yt_vis:2200,yt_h:3.7,th_seg:619,x_seg:28,tg_seg:102,wa_seg:46,sp_seg:36,pa_ua:1500,pa_un:1300,pa_ev:33000,pr_art:112300,pr_ses:1989,pr_ed:3436,g_bib:575,g_lud:60,g_tro:21,g_pra:33}};
+var KEY='dash_redes_dark_v1',D,Y,Q,V='ov';
+try{D=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){D=null}
+if(!D)D={};Object.keys(SEED).forEach(m=>{if(!D[m])D[m]=JSON.parse(JSON.stringify(SEED[m]))});
+var $=i=>document.getElementById(i),save=()=>{try{localStorage.setItem(KEY,JSON.stringify(D))}catch(e){}};
+var fmt=n=>{if(n==null)return '—';var p=String(n).split('.');return p[0].replace(/\B(?=(\d{3})+(?!\d))/g,'.')+(p[1]?','+p[1]:'')};
+var fk=n=>n>=1000?(n/1000).toFixed(n>=1e5?0:1).replace('.',',').replace(',0','')+'k':String(Math.round(n*10)/10).replace('.',',');
+var OV=false,allM=()=>{var ks=Object.keys(D).sort();if(!ks.length)return[];var a=ks[0],b=ks[ks.length-1],y=+a.slice(0,4),m=+a.slice(5),r=[];while(true){var k=y+'-'+String(m).padStart(2,'0');r.push(k);if(k>=b)break;if(++m>12){m=1;y++}}return r},PT=()=>Q==='a'?'Ano '+Y:'T'+(Q+1)+' '+Y+' ('+MS[Q*3].slice(0,3)+' – '+MS[Q*3+2].slice(0,3)+')',months=()=>OV?allM():Q==='a'?[0,1,2,3,4,5,6,7,8,9,10,11].map(i=>Y+'-'+String(i+1).padStart(2,'0')):[0,1,2].map(i=>Y+'-'+String(Q*3+i+1).padStart(2,'0')),lab=()=>months().map(m=>OV?(+m.slice(5))+'/'+m.slice(2,4):MS[+m.slice(5)-1].slice(0,3));
+var val=(m,k)=>D[m]&&D[m][k]!=null?D[m][k]:null,vs=k=>months().map(m=>val(m,k)),last=v=>v.reduce((a,x)=>x!=null?x:a,null);
+function dlt(v){var p=v.filter(x=>x!=null);if(p.length<2||!p[0])return '<span class="d mu">—</span>';var d=(p[p.length-1]-p[0])/p[0]*100,s=d>.05?'up':d<-.05?'dn':'mu';return '<span class="d '+s+'">'+(d>.05?'▲ ':d<-.05?'▼ ':'')+(d>0?'+':d<0?'−':'')+Math.abs(d).toFixed(1).replace('.',',')+'%</span>'}
+function spark(v,c){var p=[];v.forEach((x,i)=>x!=null&&p.push([i,x]));if(p.length<2)return '<div style="height:44px"></div>';
+var mn=Math.min(...p.map(a=>a[1])),mx=Math.max(...p.map(a=>a[1])),r=mx-mn||1,q=p.map(a=>[a[0]/(v.length-1)*150,36-(a[1]-mn)/r*28]),l=q.map(a=>a.join(',')).join(' ');
+return '<svg viewBox="0 0 150 44" width="100%" height="44" preserveAspectRatio="none" aria-hidden="true"><polygon points="'+q[0][0]+',44 '+l+' '+q[q.length-1][0]+',44" fill="'+c+'" opacity=".2"/><polyline points="'+l+'" fill="none" stroke="'+c+'" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg>'}
+function bars(S,L,H){var W=560,pl=40,pb=24,pt=16,ih=H-pb-pt,all=[];S.forEach(s=>s.v.forEach(x=>x!=null&&all.push(x)));
+var mx=Math.max(1,...all),e=Math.pow(10,Math.floor(Math.log10(mx))),top=Math.ceil(mx/e*2)/2*e,o='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img">';
+for(var i=0;i<=4;i++){var y=pt+ih-ih*i/4;o+='<line x1="'+pl+'" x2="'+W+'" y1="'+y+'" y2="'+y+'" stroke="var(--bd)"/><text x="'+(pl-6)+'" y="'+(y+3)+'" text-anchor="end" fill="var(--mut)" font-size="10">'+fk(top*i/4)+'</text>'}
+var gw=(W-pl)/L.length,bw=Math.min(40,gw*.7/S.length);
+L.forEach((l,j)=>{var x0=pl+gw*j+gw/2-bw*S.length/2;S.forEach((s,i)=>{var x=s.v[j];if(x==null)return;var h=ih*x/top,bx=x0+i*bw;o+='<rect x="'+bx+'" y="'+(pt+ih-h)+'" width="'+(bw-4)+'" height="'+h+'" rx="4" fill="'+s.c+'"/>'+(bw<16?'':'<text x="'+(bx+bw/2-2)+'" y="'+(pt+ih-h-4)+'" text-anchor="middle" fill="var(--tx)" font-size="10">'+fk(x)+'</text>')});
+o+='<text x="'+(pl+gw*j+gw/2)+'" y="'+(H-7)+'" text-anchor="middle" fill="var(--mut)" font-size="'+(L.length>12?8:11)+'">'+l+'</text>'});return o+'</svg>'}
+function donut(it){var T=it.reduce((a,b)=>a+b.v,0),r=62,C=2*Math.PI*r,off=0,o='<svg viewBox="0 0 170 170" width="170" height="170" role="img"><g transform="rotate(-90 85 85)">';
+it.forEach(i=>{var d=T?C*i.v/T:0;o+='<circle cx="85" cy="85" r="'+r+'" fill="none" stroke="'+i.c+'" stroke-width="20" stroke-dasharray="'+d+' '+(C-d)+'" stroke-dashoffset="'+(-off)+'"/>';off+=d});
+return o+'</g><text x="85" y="84" text-anchor="middle" fill="var(--tx)" font-size="22" font-weight="700">'+fmt(T)+'</text><text x="85" y="101" text-anchor="middle" fill="var(--mut)" font-size="11">seguidores total</text></svg>'}
+var legend=S=>'<div class="lg">'+S.map(s=>'<span><i style="background:'+s.c+'"></i>'+s.n+'</span>').join('')+'</div>';
+function overview(){OV=true;try{return ov2()}finally{OV=false}}
+function oldOv(){var L=lab(),h='<div class="kp">';
+B.slice(0,5).forEach(b=>{var v=vs(b[2]);h+='<div class="pn kc"><div class="kh">'+ic(b[3],38)+'<div>'+b[0]+'<br></div></div><b>'+fmt(last(v))+'</b><small>seguidores</small>'+dlt(v)+spark(v,b[1])+'</div>'});
+h+='</div><div class="r2"><div class="pn"><h2>Visualizações por mês</h2>'+legend([{n:'Facebook',c:'#2f7bff'},{n:'Instagram',c:'#ff3d8b'},{n:'YouTube',c:'#ff3030'}])+bars([{c:'#2f7bff',v:vs('fb_vis')},{c:'#ff3d8b',v:vs('ig_vis')},{c:'#ff3030',v:vs('yt_vis')}],L,230)+'</div>';
+var it=[];B.forEach(b=>{var x=last(vs(b[2]));if(x!=null)it.push({n:b[0],c:b[1],v:x})});var T=it.reduce((a,b)=>a+b.v,0);
+h+='<div class="pn"><h2>Distribuição de seguidores</h2><div class="dn2">'+donut(it)+'<div class="dl">'+it.map(i=>'<div><i style="background:'+i.c+'"></i><span>'+i.n+'</span><b>'+fmt(i.v)+'</b><em>'+(T?(i.v/T*100).toFixed(1).replace('.',','):0)+'%</em></div>').join('')+'</div></div></div></div>';
+var TP=[['Facebook · Visualizações','fb_vis','#2f7bff'],['Instagram · Visualizações','ig_vis','#ff3d8b'],['YouTube · Visualizações','yt_vis','#ff3030'],['PressReader · Consulta de artigos','pr_art','#2dd4a0'],['PACWEB · Quantidade de eventos','pa_ev','#d16ad6'],['Perfil Google · Biblioteca Municipal','g_bib','#f59e0b']],ds='';
+TP.forEach(t=>{var v=vs(t[1]),mx=-1;v.forEach((x,i)=>{if(x!=null&&(mx<0||x>v[mx]))mx=i});if(mx>=0)ds+='<div><i style="background:'+t[2]+'"></i><span>'+t[0]+'</span><b>'+fmt(v[mx])+'</b><span class="bg" style="flex:none">Top · '+L[mx]+'</span></div>'});
+h+='<div class="r2" style="grid-template-columns:1.3fr 1fr"><div class="pn"><h2>Destaques do período</h2><div class="ds">'+(ds||'<span class="mu">Sem dados neste trimestre. Insere um mês em "Inserir dados".</span>')+'</div></div><div class="pn"><h2>Interações com conteúdo</h2>'+legend([{n:'Facebook',c:'#2f7bff'},{n:'Instagram',c:'#ff3d8b'}])+bars([{c:'#2f7bff',v:vs('fb_int')},{c:'#ff3d8b',v:vs('ig_int')}],L,200)+'</div></div>';
+return h}
+function tbl(c){var ms=months(),h='<div class="pn tb"><div class="sc"><table><thead><tr><th>Indicador</th>'+ms.map(m=>'<th>'+MS[+m.slice(5)-1]+'</th>').join('')+'<th>Variação</th></tr></thead><tbody>';
+c.m.forEach(k=>{var v=vs(k[0]),mx=-1;v.forEach((x,i)=>{if(x!=null&&(mx<0||x>v[mx]))mx=i});h+='<tr><td>'+k[1]+'</td>'+v.map((x,i)=>'<td'+(i===mx?' class="mx"':'')+'>'+fmt(x)+'</td>').join('')+'<td>'+dlt(v)+'</td></tr>'});return h+'</tbody></table></div><p class="note" style="margin:8px 0 2px">Valor mais alto do período a azul. Variação entre o primeiro e o último mês com dados.</p></div>'}
+function sumK(keys){return months().map(m=>{var s=0,a=false;keys.forEach(k=>{var x=val(m,k);if(x!=null){s+=x;a=true}});return a?s:null})}
+function card(k,v,t,c){return '<div class="pn kc"><div class="kh">'+ic(k,38)+'<div>'+t[0]+'</div></div><b>'+fmt(last(v))+'</b><small>'+t[1]+'</small>'+dlt(v)+spark(v,c)+'</div>'}
+function ov2(){var L=lab(),ms=months(),G=['g_bib','g_lud','g_tro','g_pra'],rg=k=>MS[+k.slice(5)-1].slice(0,3).toLowerCase()+' '+k.slice(0,4),h='<p class="mu" style="margin:0 0 4px">Balanço geral desde '+rg(ms[0])+' até '+rg(ms[ms.length-1])+'. Cada cartão mostra o valor do último mês com dados e a variação desde o primeiro mês com dados.</p><h2 class="sh">Redes sociais e canais · seguidores</h2><div class="kp">';
+B.forEach(b=>{h+=card(b[3],vs(b[2]),[b[0],'seguidores'],b[1])});
+h+='</div><h2 class="sh">Serviços digitais e outros indicadores</h2><div class="kp">'+card('pa',vs('pa_ua'),['PACWEB','utilizadores ativos'],'#d16ad6')+card('pa',vs('pa_ev'),['PACWEB','quantidade de eventos'],'#d16ad6')+card('pr',vs('pr_art'),['PressReader','consulta de artigos'],'#2dd4a0')+card('pr',vs('pr_ses'),['PressReader','sessões'],'#2dd4a0')+card('g',sumK(G),['Perfil Google','interações (4 unidades)'],'#f59e0b')+card('yt',vs('yt_h'),['YouTube','horas de visualização'],'#ff3030')+'</div>';
+h+='<h2 class="sh">Evolução mensal</h2><div class="r2"><div class="pn"><h2>Visualizações por mês</h2>'+legend([{n:'Facebook',c:'#2f7bff'},{n:'Instagram',c:'#ff3d8b'},{n:'YouTube',c:'#ff3030'}])+bars([{c:'#2f7bff',v:vs('fb_vis')},{c:'#ff3d8b',v:vs('ig_vis')},{c:'#ff3030',v:vs('yt_vis')}],L,230)+'</div>';
+var it=[];B.forEach(b=>{var x=last(vs(b[2]));if(x!=null)it.push({n:b[0],c:b[1],v:x})});var T=it.reduce((a,b)=>a+b.v,0);
+h+='<div class="pn"><h2>Distribuição de seguidores</h2><div class="dn2">'+donut(it)+'<div class="dl">'+it.map(i=>'<div><i style="background:'+i.c+'"></i><span>'+i.n+'</span><b>'+fmt(i.v)+'</b><em>'+(T?(i.v/T*100).toFixed(1).replace('.',','):0)+'%</em></div>').join('')+'</div></div></div></div>';
+h+='<div class="r3"><div class="pn"><h2>PressReader · Consulta de artigos</h2>'+bars([{c:'#2dd4a0',v:vs('pr_art')}],L,170)+'</div><div class="pn"><h2>PACWEB · Quantidade de eventos</h2>'+bars([{c:'#d16ad6',v:vs('pa_ev')}],L,170)+'</div><div class="pn"><h2>Perfil Google · Interações (4 unidades)</h2>'+bars([{c:'#f59e0b',v:sumK(G)}],L,170)+'</div><div class="pn"><h2>Interações com conteúdo</h2>'+legend([{n:'Facebook',c:'#2f7bff'},{n:'Instagram',c:'#ff3d8b'}])+bars([{c:'#2f7bff',v:vs('fb_int')},{c:'#ff3d8b',v:vs('ig_int')}],L,170)+'</div></div>';
+var TP=[['Facebook · Visualizações','fb_vis','#2f7bff'],['Instagram · Visualizações','ig_vis','#ff3d8b'],['YouTube · Visualizações','yt_vis','#ff3030'],['PressReader · Consulta de artigos','pr_art','#2dd4a0'],['PACWEB · Quantidade de eventos','pa_ev','#d16ad6'],['Perfil Google · Biblioteca Municipal','g_bib','#f59e0b']],ds='';
+TP.forEach(t=>{var v=vs(t[1]),mx=-1;v.forEach((x,i)=>{if(x!=null&&(mx<0||x>v[mx]))mx=i});if(mx>=0)ds+='<div><i style="background:'+t[2]+'"></i><span>'+t[0]+'</span><b>'+fmt(v[mx])+'</b><span class="bg" style="flex:none">Top · '+rg(ms[mx])+'</span></div>'});
+return h+'<div class="pn"><h2>Destaques · melhor mês de sempre</h2><div class="ds">'+(ds||'<span class="mu">Sem dados.</span>')+'</div></div>'}
+function chan(c,i){var L=lab(),h='<div class="chg">'+IC[i].map(k=>ic(k,38)).join('')+'<h2>'+c.n+'</h2><span class="mu" style="margin-left:auto">'+PT()+'</span></div>'+tbl(c)+'<div class="mg">';
+c.m.forEach(k=>{var v=vs(k[0]);h+='<div class="pn"><div class="mt">'+k[1]+'</div><b class="big">'+fmt(last(v))+'</b> '+dlt(v)+bars([{c:c.c,v:v}],L,150)+'</div>'});return h+'</div>'}
+function nav(){var h=ok('ov')?'<button data-v="ov" class="'+(V==='ov'?'on':'')+'"><i style="background:#2f6bff"></i>Visão Geral</button>':'';
+CH.forEach((c,i)=>{if(ok(String(i)))h+='<button data-v="'+i+'" class="'+(V==i?'on':'')+'">'+ic(IC[i][0],22)+c.n+'</button>'});
+h+='<hr>';if(isA())h+='<button data-v="in" class="'+(V==='in'?'on':'')+'">Inserir dados</button><button data-v="us" class="'+(V==='us'?'on':'')+'">Utilizadores</button>';h+='<button data-v="ac" class="'+(V==='ac'?'on':'')+'">A minha conta</button><button id="lo">Terminar sessão ('+esc(ME.u)+')</button>';$('nav').innerHTML=h;
+$('nav').querySelectorAll('button').forEach(b=>b.onclick=()=>{if(b.id==='lo'){logout();return}V=b.dataset.v;show()})}
+function show(){if(!ME)return;if(!ok(V))V=firstOk();nav();$('psel').hidden=V==='ov';$('sub').textContent=V==='ov'?'Balanço geral · desde sempre':(ok(V)&&V!=='in'&&V!=='us'&&V!=='ac'?'Dados · '+PT():'');document.querySelectorAll('.sec').forEach(s=>s.classList.toggle('on',s.dataset.v==V));window.scrollTo(0,0)}
+function render(){$('sub').textContent=Q==='a'?'Balanço do ano · '+Y:'Visão geral do desempenho · T'+(Q+1)+' '+Y+' ('+MS[Q*3].slice(0,3)+' – '+MS[Q*3+2].slice(0,3)+')';
+var h=ok('ov')?'<section class="sec" data-v="ov">'+overview()+'</section>':'';CH.forEach((c,i)=>{if(ok(String(i)))h+='<section class="sec cs" data-v="'+i+'">'+chan(c,i)+'</section>'});
+var inn=$('in');$('views').innerHTML=h;show()}
+function buildForm(){var h='';CH.forEach(c=>{h+='<h3>'+c.n+'</h3>';c.m.forEach(k=>h+='<div><label for="i_'+k[0]+'">'+k[1]+'</label><input id="i_'+k[0]+'" data-k="'+k[0]+'" inputmode="decimal"></div>')});$('form').innerHTML=h}
+function fill(){var o=D[$('mo').value]||{};document.querySelectorAll('#form input').forEach(i=>{var v=o[i.dataset.k];i.value=v==null?'':String(v).replace('.',',')})}
+var say=t=>{$('msg').textContent=t;setTimeout(()=>$('msg').textContent='',3000)};
+$('mo').onchange=fill;
+$('sv').onclick=()=>{var m=$('mo').value;if(!m){say('Escolhe um mês.');return}var o={};
+document.querySelectorAll('#form input').forEach(i=>{var t=i.value.trim().replace(/\./g,'').replace(',','.');if(t!==''&&!isNaN(+t))o[i.dataset.k]=+t});
+D[m]=o;save();Y=+m.slice(0,4);if(Q!=='a')Q=Math.floor((+m.slice(5)-1)/3);setSel();var keep=V;render();V=keep;show();say('Mês guardado.')};
+$('del').onclick=()=>{var m=$('mo').value;if(m&&D[m]&&confirm('Apagar os dados de '+MS[+m.slice(5)-1]+' '+m.slice(0,4)+'?')){delete D[m];save();fill();var keep=V;render();V=keep;show();say('Mês apagado.')}};
+$('pdf').onclick=()=>window.print();
+function setSel(){var ys=Object.keys(D).map(m=>+m.slice(0,4)).concat([Y,new Date().getFullYear()]),a=Math.min(...ys),b=Math.max(...ys),h='';for(var y=a;y<=b;y++)h+='<option'+(y===Y?' selected':'')+'>'+y+'</option>';$('yr').innerHTML=h;$('qt').value=Q}
+$('yr').onchange=function(){Y=+this.value;var k=V;render();V=k;show()};$('qt').onchange=function(){Q=this.value==='a'?'a':+this.value;var k=V;render();V=k;show()};
+var AK='dash_auth_v1',A,ME=null;
+try{A=JSON.parse(localStorage.getItem(AK)||'null')}catch(e){A=null}
+if(!A||!A.users)A={users:[]};
+var saveA=()=>{try{localStorage.setItem(AK,JSON.stringify(A))}catch(e){}},ALL=['ov'].concat(CH.map((c,i)=>String(i))),isA=()=>!!ME&&ME.r==='admin',
+esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),flash=(id,t)=>{$(id).textContent=t;setTimeout(()=>{$(id).textContent=''},3500)};
+function ok(v){if(!ME)return false;if(v==='in'||v==='us')return isA();if(v==='ac')return true;return isA()||ME.m.indexOf(v)>-1}
+function firstOk(){return ALL.filter(ok)[0]||'ac'}
+async function hash(u,p){var s='dbr:'+u.toLowerCase()+':'+p;try{var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){var h=5381;for(var i=0;i<s.length;i++)h=(h*33^s.charCodeAt(i))>>>0;return 'x'+h}}
+function gate(){var u=null;try{u=sessionStorage.getItem('dash_sess')}catch(e){}var f=A.users.filter(x=>x.u===u)[0];if(f)enter(f);else lgView()}
+function lgView(){var first=!A.users.length;$('lgt').textContent=first?'Criar conta de administrador':'Iniciar sessão';$('lgs').textContent=first?'Primeira utilização: define o utilizador e a password do administrador.':'Entra com o teu utilizador e password.';$('lgb').textContent=first?'Criar e entrar':'Entrar';$('lge').textContent='';$('lgrw').hidden=first;$('lgf').hidden=false;$('rsf').hidden=true;document.body.classList.remove('in')}
+function enter(n){ME=n;try{sessionStorage.setItem('dash_sess',n.u)}catch(e){}$('lgp').value='';document.body.classList.add('in');V=firstOk();render();us();if(!n.c)needCode()}
+function logout(){ME=null;try{sessionStorage.removeItem('dash_sess')}catch(e){}$('views').innerHTML='';$('nav').innerHTML='';$('rcb').innerHTML='';$('rcu').innerHTML='';$('lgu').value='';lgView()}
+$('lgf').onsubmit=async function(e){e.preventDefault();var u=$('lgu').value.trim(),p=$('lgp').value,first=!A.users.length;
+if(!u){$('lge').textContent='Escreve o utilizador.';return}
+if(first&&p.length<6){$('lge').textContent='A password deve ter pelo menos 6 caracteres.';return}
+var h=await hash(u,p);
+if(first){var rc=newCode(),n={u:u,h:h,r:'admin',m:ALL.slice(),c:await rcH(u,rc)};A.users.push(n);saveA();enter(n);V='ac';showRC('rcb',u,rc);show();return}
+var f=A.users.filter(x=>x.u.toLowerCase()===u.toLowerCase())[0];
+if(!f||f.h!==h){$('lge').textContent='Utilizador ou password incorretos.';return}enter(f)};
+function us(){if(!isA())return;var lb=k=>k==='ov'?'Visão Geral':CH[+k].n;
+var h='<tr><th>Utilizador</th><th>Perfil</th><th>Acessos ao menu</th><th>Nova password</th><th></th></tr>';
+A.users.forEach((x,i)=>{h+='<tr><td>'+esc(x.u)+'</td><td>'+(x.r==='admin'?'Administrador':'Utilizador')+'</td><td style="white-space:normal">'+(x.r==='admin'?'Tudo':(x.m.map(lb).join(', ')||'—'))+'</td><td><input type="password" id="rp'+i+'" placeholder="nova password" autocomplete="new-password"></td><td><button class="b" data-a="rc" data-i="'+i+'">Novo código</button> <button class="b" data-a="pw" data-i="'+i+'">Repor</button> <button class="b" data-a="rm" data-i="'+i+'">Remover</button></td></tr>'});
+$('ut').innerHTML=h;$('nm').innerHTML=ALL.map(k=>'<label><input type="checkbox" value="'+k+'" checked> '+lb(k)+'</label>').join('')}
+$('ut').onclick=async function(e){var b=e.target.closest('button');if(!b||!isA())return;var i=+b.dataset.i,x=A.users[i];
+if(b.dataset.a==='pw'){var p=$('rp'+i).value;if(p.length<6){flash('um','Password: mínimo 6 caracteres.');return}x.h=await hash(x.u,p);saveA();$('rp'+i).value='';flash('um','Password de '+x.u+' atualizada.')}
+else if(b.dataset.a==='rc'){var rc=newCode();x.c=await rcH(x.u,rc);saveA();showRC('rcu',x.u,rc)}
+else{if(x.u===ME.u){flash('um','Não podes remover a tua própria conta.');return}if(x.r==='admin'&&A.users.filter(y=>y.r==='admin').length<2){flash('um','Tem de existir pelo menos um administrador.');return}A.users.splice(i,1);saveA();us();flash('um','Utilizador removido.')}};
+$('nc').onclick=async function(){if(!isA())return;var u=$('nu').value.trim(),p=$('np').value,r=$('nr').value;
+if(!u){flash('um','Escreve o utilizador.');return}if(p.length<6){flash('um','Password: mínimo 6 caracteres.');return}
+if(A.users.some(x=>x.u.toLowerCase()===u.toLowerCase())){flash('um','Esse utilizador já existe.');return}
+var m=[].slice.call(document.querySelectorAll('#nm input:checked')).map(i=>i.value);
+var rc=newCode();A.users.push({u:u,h:await hash(u,p),r:r,m:r==='admin'?ALL.slice():m,c:await rcH(u,rc)});saveA();$('nu').value='';$('np').value='';us();flash('um','Utilizador criado.');showRC('rcu',u,rc)};
+$('cp').onclick=async function(){var o=$('op').value,n=$('np2').value;if(n.length<6){flash('am','Nova password: mínimo 6 caracteres.');return}
+if(await hash(ME.u,o)!==ME.h){flash('am','Password atual incorreta.');return}ME.h=await hash(ME.u,n);saveA();$('op').value='';$('np2').value='';flash('am','Password alterada.')};
+var rcH=(u,c)=>hash(u,'rc:'+String(c).toUpperCase().replace(/[^A-Z0-9]/g,''));
+function newCode(){var al='ABCDEFGHJKLMNPQRSTUVWXYZ23456789',a=new Uint8Array(16),s='';try{crypto.getRandomValues(a)}catch(e){for(var i=0;i<16;i++)a[i]=Math.floor(Math.random()*256)}a.forEach(x=>{s+=al[x%al.length]});return s.match(/.{4}/g).join('-')}
+function showRC(id,who,code){$(id).innerHTML='<div class="rcb">Código de recuperação de <b>'+esc(who)+'</b>. Guarda-o num sítio seguro, só aparece agora:<br><code>'+code+'</code></div>'}
+async function needCode(){var rc=newCode();ME.c=await rcH(ME.u,rc);saveA();V='ac';showRC('rcb',ME.u,rc);show()}
+$('lgr').onclick=function(){$('lgf').hidden=true;$('rsf').hidden=false;$('rse').textContent='';$('rsu').value=$('lgu').value};
+$('rsb').onclick=function(){lgView()};
+$('rsf').onsubmit=async function(e){e.preventDefault();var u=$('rsu').value.trim(),c=$('rsc').value,p=$('rsp').value;
+var f=A.users.filter(x=>x.u.toLowerCase()===u.toLowerCase())[0];
+if(p.length<6){$('rse').textContent='A nova password deve ter pelo menos 6 caracteres.';return}
+if(!f||!f.c||f.c!==await rcH(f.u,c)){$('rse').textContent='Utilizador ou código de recuperação inválidos.';return}
+f.h=await hash(f.u,p);var rc=newCode();f.c=await rcH(f.u,rc);saveA();$('rsc').value='';$('rsp').value='';enter(f);V='ac';showRC('rcb',f.u,rc);show()};
+$('gc').onclick=async function(){if(await hash(ME.u,$('op').value)!==ME.h){flash('am','Escreve a password atual para gerar um novo código.');return}var rc=newCode();ME.c=await rcH(ME.u,rc);saveA();$('op').value='';showRC('rcb',ME.u,rc)};
+(function(){var ks=Object.keys(D).sort(),l=ks.length?ks[ks.length-1]:new Date().toISOString().slice(0,7);
+Y=+l.slice(0,4);Q='a';$('mo').value=l;$('in').dataset.v='in';buildForm();setSel();fill();render();gate()})();
+</script>
+</body>
+</html>
